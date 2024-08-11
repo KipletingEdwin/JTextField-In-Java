@@ -9,7 +9,10 @@ public class MyFrame extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
+        JTextField textField = new JTextField();
+        textField.setPreferredSize(new Dimension(250,40));
 
+        this.add(textField);
         this.pack();
         this.setVisible(true);
     }

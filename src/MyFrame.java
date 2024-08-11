@@ -21,6 +21,7 @@ public class MyFrame extends JFrame implements ActionListener {
         textField.setForeground(new Color(0x00FF00));
         textField.setBackground(Color.black);
         textField.setCaretColor(Color.white);
+        textField.setText("username");
 
         this.add(button);
         this.add(textField);

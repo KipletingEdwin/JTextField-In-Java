@@ -14,6 +14,7 @@ public class MyFrame extends JFrame implements ActionListener {
         JTextField textField = new JTextField();
         textField.setPreferredSize(new Dimension(250,40));
 
+        this.add(button);
         this.add(textField);
         this.pack();
         this.setVisible(true);

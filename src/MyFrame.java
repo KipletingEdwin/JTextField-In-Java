@@ -5,14 +5,17 @@ import java.awt.event.ActionListener;
 
 public class MyFrame extends JFrame implements ActionListener {
 
+    JButton button;
+    JTextField textField;
+
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
-        JButton button = new JButton("Submit");
+        button = new JButton("Submit");
         button.addActionListener(this);
 
-        JTextField textField = new JTextField();
+       textField = new JTextField();
         textField.setPreferredSize(new Dimension(250,40));
 
         this.add(button);
@@ -24,6 +27,9 @@ public class MyFrame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==button){
+            System.out.println(textField.getText());
+        }
 
     }
 }

@@ -23,6 +23,7 @@ public class MyFrame extends JFrame implements ActionListener {
         textField.setCaretColor(Color.white);
         textField.setText("username");
 
+
         this.add(button);
         this.add(textField);
         this.pack();
@@ -34,6 +35,8 @@ public class MyFrame extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==button){
             System.out.println(textField.getText());
+            button.setEnabled(false);
+            textField.setEditable(false);
         }
 
     }

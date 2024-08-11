@@ -18,6 +18,7 @@ public class MyFrame extends JFrame implements ActionListener {
         textField = new JTextField();
         textField.setPreferredSize(new Dimension(250,40));
         textField.setFont(new Font("Consolas", Font.PLAIN,35));
+        textField.setForeground(new Color(0x00FF00));
 
         this.add(button);
         this.add(textField);

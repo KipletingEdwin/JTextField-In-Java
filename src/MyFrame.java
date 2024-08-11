@@ -20,6 +20,7 @@ public class MyFrame extends JFrame implements ActionListener {
         textField.setFont(new Font("Consolas", Font.PLAIN,35));
         textField.setForeground(new Color(0x00FF00));
         textField.setBackground(Color.black);
+        textField.setCaretColor(Color.white);
 
         this.add(button);
         this.add(textField);

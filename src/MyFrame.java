@@ -15,8 +15,9 @@ public class MyFrame extends JFrame implements ActionListener {
         button = new JButton("Submit");
         button.addActionListener(this);
 
-       textField = new JTextField();
+        textField = new JTextField();
         textField.setPreferredSize(new Dimension(250,40));
+        textField.setFont(new Font("Consolas", Font.PLAIN,35));
 
         this.add(button);
         this.add(textField);
